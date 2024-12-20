@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Fruit house</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="nav-btn">Home</a></li>
+                    <li><a href="#about" class="nav-btn">About</a></li>
+                    <li><a href="#product" class="nav-btn">Product</a></li>
+                    <li><a href="#contact" class="nav-btn">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <h2>Welcome to Fruit House</h2>
+        <p>Your one-stop shop for fresh and organic fruits</p >
+        Shop Now
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <p>We are committed to providing the freshest fruits directly from the farm to your table. 
+                Our fruits are 100% organic, full of flavor, and handpicked to ensure the highest quality. 
+                Experience the goodness of nature with every bite.</p >
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+                <div class="product-item">
+
+                    <img src="/apple.jpg" alt="Apple">
+                    <h3>Apple</h3>
+                    <p>$2.20 / lb</p >
+                    <a href="#"
+                    class="order-now-btn">Order Now</a>
+                </div>
+
+                <div class="product-item">
+                    <img src="banana.jpg" alt="Banana">
+                    <h3>Banana</h3>
+                    <p>$1.20 / lb</p >
+                        <a href="#"
+                        class="order-now-btn">Order Now</a>
+                </div>
+
+                <div class="product-item">
+                    <img src="/orange.jpg" alt="Orange">
+                    <h3>Orange</h3>
+                    <p>$1.50 / lb</p >
+                        <a href="#"
+                        class="order-now-btn">Order Now</a>
+                </div>
+
+                <div class="product-item">
+                    <img src="/grapes.jpg" alt="Grapes">
+                    <h3>Grapes</h3>
+                    <p>$3.00 / lb</p >
+                        <a href="#"
+                        class="order-now-btn">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="#">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Fresh Fruits. All rights reserved.</p >
+    </footer>
+</body>
+</html>

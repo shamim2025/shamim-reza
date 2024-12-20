@@ -1,0 +1,272 @@
+/* General Styles */
+body {
+    background-image: url('/bacground.jpg'); /* Path to your image */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+/* Additional CSS styles for header, footer, etc. */
+/* Header */
+header {
+    background: #795c80dd;
+    color: rgba(99, 205, 80, 0.845);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header ul li {
+    margin: 0 10px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background: url('hero-fruits.jpg') no-repeat center center/cover;
+    color: rgba(26, 133, 157, 0.945);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.hero .btn {
+    background: #ff9900;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background: #cc7a00;
+}
+
+/* Products Section */
+.products {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.product-item {
+    background: rgb(249, 249, 249);
+    border: 1px solid #62d379;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.product-item img:hover {
+    transform: scale(1.1);
+}
+
+.product-item h3 {
+    margin: 1rem 0 0.5rem;
+}
+
+.product-item p {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.order-now-btn {
+    margin-top: 10px;
+    background-color: #cc9fc5;
+    color: rgba(62, 32, 83, 0.897);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.order-now-btn:hover {
+    background-color: #9bb7a1;
+}
+
+/* About Section */
+.about {
+    background: linear-gradient(to right, #99abc2, #ffffff);
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #4CAF50;
+}
+
+.about .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.about .about-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about .about-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+    padding: 0 1rem;
+    text-align: justify;
+}
+
+/* Contact Section */
+.contact {
+    background: linear-gradient(to right, #b97ed8, #6e3b57);
+    color: rgb(195, 203, 214);
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #62cdade8;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.contact form {
+    max-width: 300px;
+    margin: auto;
+    background: #d29db5ab;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #333;
+    text-align: left;
+}
+
+.contact label {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 1rem 0 0.5rem;
+}
+
+.contact input,
+.contact textarea {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #aeb1b8;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact textarea {
+    resize: none;
+    height: 120px;
+}
+
+.contact button {
+    background: #5675de;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact button:hover {
+    background: #7b4b7e;
+    transform: scale(1.05);
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    outline: none;
+    border-color: #444d39b6;
+    box-shadow: 0 0 5px rgba(142, 125, 184, 0.5);
+}
+
+.contact form::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
